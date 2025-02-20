@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加新药品</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>添加新药品</h1>
+    <form method="POST">
+        {% csrf_token %}
+        
+        <label for="drug_definition">选择药品：</label>
+        <select id="drug_definition" name="drug_definition" required>
+            <option value="">请选择药品</option>
+            {% for drug_def in drug_definitions %}
+                <option value="{{ drug_def.id }}">{{ drug_def.name }} ({{ drug_def.code }}) - {{ drug_def.company }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+
+        <label for="quantity">数量：</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+        <br><br>
+
+        <button type="submit">添加药品</button>
+    </form>
+    <br>
+    <a href="{% url 'home' %}">返回首页</a>
+</body>
+</html>

@@ -1,0 +1,55 @@
+#这是淳朴版的home页面，没有那么多华丽的东西
+#修改的话，重命名改成home.html即可（记得将现在这个改成home1.txt）
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h1>欢迎来到主页!</h1>
+    <p>您已成功登录。</p>
+    <p>用户邮箱: {{ user.email }}</p>
+
+    <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">登出</button>
+    </form>
+
+    <!-- 查询表单 -->
+    <h2>药品查询</h2>
+    <form action="{% url 'home' %}" method="get">
+        <input type="text" name="search" placeholder="输入药品名称进行搜索">
+        <button type="submit">查询</button>
+    </form>
+
+    <h2>药品管理</h2>
+    <a href="{% url 'add_drug' %}">添加药品</a>
+    <table border="1">
+        <tr>
+            <th>药品名称</th>
+            <th>药品公司</th>
+            <th>药品数量</th>
+            <th>药品代码</th>
+            <th>操作</th>
+        </tr>
+        {% for drug in drugs %}
+        <tr>
+            <td>{{ drug.drug_name }}</td>
+            <td>{{ drug.drug_company }}</td>
+            <td>{{ drug.drug_quantity }}</td>
+            <td>{{ drug.drug_code }}</td>
+            <td>
+                <a href="{% url 'edit_drug' drug.id %}">编辑</a> |
+                <form action="{% url 'delete_drug' drug.id %}" method="post" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit">删除</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

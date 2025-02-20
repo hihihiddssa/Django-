@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.idea",
+    "\\bysms",
+    "\\common",
+    "\\mgr",
+    "\\sales",
+    "\\z_dist",
+    "\\z_dist\\mgr"
+  ],
+  "SelectedNode": "\\mgr\\urls.py",
+  "PreviewInSolutionExplorer": false
+}

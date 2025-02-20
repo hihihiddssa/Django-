@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AMY_PROJECTS\\bysms\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\AMY_PROJECTS\\bysms\\mgr\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:mgr\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\AMY_PROJECTS\\bysms\\bysms\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bysms\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\AMY_PROJECTS\\bysms\\mgr\\sign_in_out.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:mgr\\sign_in_out.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\AMY_PROJECTS\\bysms\\z_dist\\mgr\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:z_dist\\mgr\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "urls.py",
+              "DocumentMoniker": "D:\\AMY_PROJECTS\\bysms\\mgr\\urls.py",
+              "RelativeDocumentMoniker": "mgr\\urls.py",
+              "ToolTip": "D:\\AMY_PROJECTS\\bysms\\mgr\\urls.py",
+              "RelativeToolTip": "mgr\\urls.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANdSURBVEhL1ZNNaFxVGIafc86deydjGxNjGvMLQhpBi9CdBUEKbnRR00VWUoSmIC6qRUqhwS6ycKlQdFWhm1JxEbCgJV3FLtwUUlKJidNB29BgYqIpM5P5STLnnM9FZu5kmqkpVBd\u002BcLgvl3uf93x/8F\u002BGiDz66l8PVRPXs3PyUrKVs6VzzNlp\u002BnVEnw7oM4rewNEbWtpNhYRzhM7Fz5064RxahOW1kJdffagAdM2gOwq4XVyiqzyIK6fYLCcpbyQobGnyFc3apmapFLJYjLi3nuTXfAt3cynSuRbS2SSZfIJ0PuJhoYuS26ph6xmM5T6VuT83yXw7gS85bNHhShZXdLhS9VS1VARxgtjqc4f\u002B6eYQK3aJ1w\u002BuNmbw9dZV0tx\u002BKrg4wUT7sWGyhq0baF9BzFoMv//FfR5cfsD0l9OMvzdOYAOkIhwaPMTFTy6yMr3Cnck7nBw52WAUBc\u002BgdLDboNNonjf1mwNc\u002BOoCV65fYXR4lONHj9Pf1c\u002BNyzfo6uhi5P0RJqcmEd\u002BYRSQRRmIssVW31uiEZ7FaCoDZX2ZZXlpm9J1Rejp7OHb0GNZZTnx4gnKxzNTNqV0lEtTO1tYz6Et4XjCVuOYA1z6/xq1vbpFbz3Hp6iWyuSyFYoFysdy0/uIEpRQ7tys2GAgtPWYzbijA\u002Bc/Oc2TkCIffPkw2m2Xi\u002BwnaWtsYPzvO0ItDjH00xvBbww0GKLV9HjU4gKdV6tMCMJueZT49H/9cyBc4PXaaU\u002B\u002BeYuaHGc58cIaO9o66gRcEqmXajlh9VxqQv/KGj4eze46iWGGgZ4CFhYUGOA7\u002B\u002BH2Y\u002BY2feaPvbuMePOcd\u002B9zec17TzeDiBS/12zcYPGst\u002B23lscBduglcnCBKNZQoNmirVEg593jgk8D9dpObTlHSWkLvmwOfFN4kYgPjPVrqwMJvBYoLRUqLJcrLZTZWN8jMZPaEi9A8g9o3tdum\u002BlO0dLeQPJAk6ogI20IGXxn8RzhU4Tv6HBsUjcEqnros23tQj9grs9gqqtLJPtWC1gm0NhgVkJAA0QbRGrRClMJjcBh89Vgf4FWAFY1Kpbi3/iNv9m7vQd0g0y7aJNAmINSahDJEOiD0GowCZRADKI1XBq80ThkcGk\u002BAJcBicASsbmZ5rXu6cSH\u002Bt/E3MWYiY3LF70kAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-09-07T08:56:08.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "urls.py",
+              "DocumentMoniker": "D:\\AMY_PROJECTS\\bysms\\bysms\\urls.py",
+              "RelativeDocumentMoniker": "bysms\\urls.py",
+              "ToolTip": "D:\\AMY_PROJECTS\\bysms\\bysms\\urls.py",
+              "RelativeToolTip": "bysms\\urls.py",
+              "ViewState": "AQIAABIAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANdSURBVEhL1ZNNaFxVGIafc86deydjGxNjGvMLQhpBi9CdBUEKbnRR00VWUoSmIC6qRUqhwS6ycKlQdFWhm1JxEbCgJV3FLtwUUlKJidNB29BgYqIpM5P5STLnnM9FZu5kmqkpVBd\u002BcLgvl3uf93x/8F\u002BGiDz66l8PVRPXs3PyUrKVs6VzzNlp\u002BnVEnw7oM4rewNEbWtpNhYRzhM7Fz5064RxahOW1kJdffagAdM2gOwq4XVyiqzyIK6fYLCcpbyQobGnyFc3apmapFLJYjLi3nuTXfAt3cynSuRbS2SSZfIJ0PuJhoYuS26ph6xmM5T6VuT83yXw7gS85bNHhShZXdLhS9VS1VARxgtjqc4f\u002B6eYQK3aJ1w\u002BuNmbw9dZV0tx\u002BKrg4wUT7sWGyhq0baF9BzFoMv//FfR5cfsD0l9OMvzdOYAOkIhwaPMTFTy6yMr3Cnck7nBw52WAUBc\u002BgdLDboNNonjf1mwNc\u002BOoCV65fYXR4lONHj9Pf1c\u002BNyzfo6uhi5P0RJqcmEd\u002BYRSQRRmIssVW31uiEZ7FaCoDZX2ZZXlpm9J1Rejp7OHb0GNZZTnx4gnKxzNTNqV0lEtTO1tYz6Et4XjCVuOYA1z6/xq1vbpFbz3Hp6iWyuSyFYoFysdy0/uIEpRQ7tys2GAgtPWYzbijA\u002Bc/Oc2TkCIffPkw2m2Xi\u002BwnaWtsYPzvO0ItDjH00xvBbww0GKLV9HjU4gKdV6tMCMJueZT49H/9cyBc4PXaaU\u002B\u002BeYuaHGc58cIaO9o66gRcEqmXajlh9VxqQv/KGj4eze46iWGGgZ4CFhYUGOA7\u002B\u002BH2Y\u002BY2feaPvbuMePOcd\u002B9zec17TzeDiBS/12zcYPGst\u002B23lscBduglcnCBKNZQoNmirVEg593jgk8D9dpObTlHSWkLvmwOfFN4kYgPjPVrqwMJvBYoLRUqLJcrLZTZWN8jMZPaEi9A8g9o3tdum\u002BlO0dLeQPJAk6ogI20IGXxn8RzhU4Tv6HBsUjcEqnros23tQj9grs9gqqtLJPtWC1gm0NhgVkJAA0QbRGrRClMJjcBh89Vgf4FWAFY1Kpbi3/iNv9m7vQd0g0y7aJNAmINSahDJEOiD0GowCZRADKI1XBq80ThkcGk\u002BAJcBicASsbmZ5rXu6cSH\u002Bt/E3MWYiY3LF70kAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-09-07T08:55:57.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "sign_in_out.py",
+              "DocumentMoniker": "D:\\AMY_PROJECTS\\bysms\\mgr\\sign_in_out.py",
+              "RelativeDocumentMoniker": "mgr\\sign_in_out.py",
+              "ToolTip": "D:\\AMY_PROJECTS\\bysms\\mgr\\sign_in_out.py",
+              "RelativeToolTip": "mgr\\sign_in_out.py",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAaAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANdSURBVEhL1ZNNaFxVGIafc86deydjGxNjGvMLQhpBi9CdBUEKbnRR00VWUoSmIC6qRUqhwS6ycKlQdFWhm1JxEbCgJV3FLtwUUlKJidNB29BgYqIpM5P5STLnnM9FZu5kmqkpVBd\u002BcLgvl3uf93x/8F\u002BGiDz66l8PVRPXs3PyUrKVs6VzzNlp\u002BnVEnw7oM4rewNEbWtpNhYRzhM7Fz5064RxahOW1kJdffagAdM2gOwq4XVyiqzyIK6fYLCcpbyQobGnyFc3apmapFLJYjLi3nuTXfAt3cynSuRbS2SSZfIJ0PuJhoYuS26ph6xmM5T6VuT83yXw7gS85bNHhShZXdLhS9VS1VARxgtjqc4f\u002B6eYQK3aJ1w\u002BuNmbw9dZV0tx\u002BKrg4wUT7sWGyhq0baF9BzFoMv//FfR5cfsD0l9OMvzdOYAOkIhwaPMTFTy6yMr3Cnck7nBw52WAUBc\u002BgdLDboNNonjf1mwNc\u002BOoCV65fYXR4lONHj9Pf1c\u002BNyzfo6uhi5P0RJqcmEd\u002BYRSQRRmIssVW31uiEZ7FaCoDZX2ZZXlpm9J1Rejp7OHb0GNZZTnx4gnKxzNTNqV0lEtTO1tYz6Et4XjCVuOYA1z6/xq1vbpFbz3Hp6iWyuSyFYoFysdy0/uIEpRQ7tys2GAgtPWYzbijA\u002Bc/Oc2TkCIffPkw2m2Xi\u002BwnaWtsYPzvO0ItDjH00xvBbww0GKLV9HjU4gKdV6tMCMJueZT49H/9cyBc4PXaaU\u002B\u002BeYuaHGc58cIaO9o66gRcEqmXajlh9VxqQv/KGj4eze46iWGGgZ4CFhYUGOA7\u002B\u002BH2Y\u002BY2feaPvbuMePOcd\u002B9zec17TzeDiBS/12zcYPGst\u002B23lscBduglcnCBKNZQoNmirVEg593jgk8D9dpObTlHSWkLvmwOfFN4kYgPjPVrqwMJvBYoLRUqLJcrLZTZWN8jMZPaEi9A8g9o3tdum\u002BlO0dLeQPJAk6ogI20IGXxn8RzhU4Tv6HBsUjcEqnros23tQj9grs9gqqtLJPtWC1gm0NhgVkJAA0QbRGrRClMJjcBh89Vgf4FWAFY1Kpbi3/iNv9m7vQd0g0y7aJNAmINSahDJEOiD0GowCZRADKI1XBq80ThkcGk\u002BAJcBicASsbmZ5rXu6cSH\u002Bt/E3MWYiY3LF70kAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-09-07T08:33:20.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\AMY_PROJECTS\\bysms\\z_dist\\mgr\\index.html",
+              "RelativeDocumentMoniker": "z_dist\\mgr\\index.html",
+              "ToolTip": "D:\\AMY_PROJECTS\\bysms\\z_dist\\mgr\\index.html",
+              "RelativeToolTip": "z_dist\\mgr\\index.html",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAAAJcAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-07T08:12:39.166Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

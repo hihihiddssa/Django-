@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>登录 - 注册</title>
+
+
+    
+
+    
+
+    <style type="text/css">*{margin:0 auto;padding:0;font-family:'Microsoft YaHei UI Light',sans-serif}.cont_principal{position:absolute;width:100%;height:100%}.cont_centrar2{width:60%;height:100%;margin:10% auto;max-width:600px}.cont_centrar{position:relative;width:320px;float:left;border-radius:8px;transition:all .5s}.cent_active{box-shadow:5px 5px 10px 0 rgba(0,0,0,.21)}.cont_tabs_login{position:relative;float:left;width:100%}.ul_tabs>li{position:relative;width:50%;list-style:none;text-align:center}.ul_tabs>li>a{text-decoration:none;font-family:"Microsoft YaHei UI Light";font-size:1.1em;color:#999;line-height:14px;padding:20px;display:block;transition:all .5s}.ul_tabs>.active>a{color:#149ca9;font-size:1.5em}.linea_bajo_nom{position:relative;width:100%;float:left;background-color:#999;height:2px}.active .linea_bajo_nom{position:relative;width:100%;float:left;background-color:#149ca9;height:2px}.cont_text_inputs{position:relative;float:left;width:100%;margin-top:20px}.input_form_sign{position:relative;float:left;width:90%;border:none;border-bottom:1px solid #b0bec5;background-color:transparent;font-size:1em;outline:0;transition:all .5s;height:0;margin:0;padding:0;opacity:0;display:none}.active_inp{margin:5% 5%;padding:10px 0;opacity:1;height:5px}.input_form_sign:focus{border-bottom:1px solid #149ca9}.link_forgot_pass{position:relative;margin-top:0;margin-left:30%;text-decoration:none;color:#999;font-size:.8em;display:none;float:left;transition:all .5s}.cont_btn{position:relative;float:left;width:100%}.btn_sign{background:rgba(20,156,169,.74);border-radius:8px;padding:.5em 0;border:none;color:#fff;font-size:1.5em;position:relative;float:left;margin:1em auto;cursor:pointer;width:100%}.terms_and_cons{width:70%;color:#999;font-size:13px;transition:all .5s}.d_none{display:none}.d_block{display:block}.cont_text_inputs>input:nth-child(1){transition-delay:.2s}.cont_text_inputs>input:nth-child(2){transition-delay:.4s}.cont_text_inputs>input:nth-child(3){transition-delay:.6s}.cont_text_inputs>input:nth-child(4){transition-delay:.8s}</style>
+</head>
+
+<body>
+<div class="cont_principal">
+
+    <div class="cont_centrar2">
+        <div class="cont_login">
+            <div action="">
+                <div class="cont_tabs_login">
+                    
+                </div>
+                <div class="cont_text_inputs">
+                    <input type="text" class="input_form_sign" placeholder="NAME" id="realname">
+
+                    <input type="text" maxlength="10" class="input_form_sign d_block active_inp" placeholder="登录名" id="username">
+
+                    <input type="password" maxlength="10" class="input_form_sign d_block active_inp" placeholder="密码" id="password">
+
+                    <input type="password" maxlength="10" class="input_form_sign" placeholder="确认密码" id="conf_password">
+
+
+                    <input type="text" maxlength="10" class="input_form_sign" placeholder="验证码" id="captcha">
+
+                    <canvas style="margin-left:20%" id="textCanvas" height="30" width="100"></canvas>
+
+
+
+
+                    <a href="#" class="link_forgot_pass d_block">忘记密码 ?</a>
+
+
+
+                    <div class="terms_and_cons d_none">
+                        <p class="d_none"><input type="checkbox" name="terms_and_cons">
+                            <label for="terms_and_cons">Accept  Terms and Conditions.</label>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="cont_btn">
+                    <button class="btn_sign" id="btn_sign" onclick="submit1()">登录</button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>function makeid(e){for(var t="",n="ABCDEFGHIJKLMNOPQRSTUVWXYZ",o=0;o<e;o++)t+=n.charAt(Math.floor(Math.random()*n.length));return t}function cc(){var e=document.getElementById("textCanvas"),t=e.getContext("2d");t.clearRect(0,0,e.width,e.height),t.font="1.6em Verdana",cap=makeid(4),confuse=makeid(11)+cap[2]+makeid(4)+cap[1]+makeid(7)+cap[3]+makeid(7)+cap[0]+makeid(7),t.strokeText(cap,0,20)}function sign_up(){cc();var t=document.querySelectorAll(".input_form_sign");document.querySelectorAll(".ul_tabs > li")[0].className="",document.querySelectorAll(".ul_tabs > li")[1].className="active",$("#textCanvas").show(),setTimeout(function(){for(var e=0;e<t.length;e++)0!=e&&(document.querySelectorAll(".input_form_sign")[e].className="input_form_sign d_block active_inp")},100),document.querySelector(".link_forgot_pass").style.opacity="0",document.querySelector(".link_forgot_pass").style.top="-5px",document.querySelector(".btn_sign").innerHTML="注册",setTimeout(function(){},300),setTimeout(function(){document.querySelector(".link_forgot_pass").className="link_forgot_pass d_none",document.querySelector(".terms_and_cons").className="terms_and_cons d_block d_none"},350)}function sign_in(){var e=document.querySelectorAll(".input_form_sign");document.querySelectorAll(".ul_tabs > li")[0].className="active",document.querySelectorAll(".ul_tabs > li")[1].className="",$("#textCanvas").hide();for(var t=0;t<e.length;t++)switch(t){case 1:case 2:console.log(e[t].name);break;default:document.querySelectorAll(".input_form_sign")[t].className="input_form_sign d_none"}document.querySelector(".btn_sign").innerHTML="登录"}function submit1(e){return"登录"===document.querySelector(".btn_sign").innerHTML?postLoginRequest():postRegisterRequest(),!1}function preEnterHomepage(e,t,n){sessionStorage.clear(),sessionStorage.username=n}function postLoginRequest(){console.log("login");var o=$("#username").val(),e=$("#password").val();0!==o.length?0!==e.length?$.ajax({url:"/api/mgr/signin",type:"POST",data:"username="+o+"&password="+e,success:function(e,t,n){0===e.ret?(preEnterHomepage(e,n,o),window.location.href="/mgr/index.html"):(alert("登录失败 : "+e.msg),$("#password").val(""))},error:function(e,t,n){alert("错误: "+e.status+n)}}):alert("请输入密码"):alert("请输入用户名")}</script>
+
+</body>
+</html>

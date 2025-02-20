@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* 确保至少和视口一样高 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* 使内容垂直排列 */
+            padding-top: 20px; /* 增加顶部内边距 */
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 85%;
+            max-width: 1000px;
+            flex: 1; /* 允许容器占据剩余空间 */
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input[type="text"], button {
+            padding: 8px 15px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .action-buttons {
+            display: flex;
+            gap: 5px; /* Adjust the gap between buttons */
+        }
+        .action-button {
+            padding: 8px 15px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .action-button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎来到主页!</h1>
+        <p>您已成功登录。</p>
+        <p>用户邮箱: {{ user.email }}</p>
+
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">登出</button>
+        </form>
+
+        <!-- 查询表单 -->
+        <h2>药品查询</h2>
+        <form action="{% url 'home' %}" method="get">
+            <input type="text" name="search" placeholder="输入药品名称进行搜索">
+            <button type="submit">查询</button>
+        </form>
+
+        <h2>药品管理</h2>
+        <a href="{% url 'add_drug' %}" class="action-button">添加药品</a>
+        <a href="{% url 'add_drug_definition' %}">添加新药品定义</a>
+        <table>
+            <tr>
+                <th>药品名称</th>
+                <th>药品公司</th>
+                <th>药品数量</th>
+                <th>药品代码</th>
+                <th>操作</th>
+            </tr>
+            {% for drug in drugs %}
+            <tr>
+                <td>{{ drug.drug_name }}</td>
+                <td>{{ drug.drug_company }}</td>
+                <td>{{ drug.drug_quantity }}</td>
+                <td>{{ drug.drug_code }}</td>
+                <td class="action-buttons">
+                    <a href="{% url 'edit_drug' drug.id %}" class="action-button">编辑</a>
+                    <form action="{% url 'delete_drug' drug.id %}" method="post" class="action-buttons">
+                        {% csrf_token %}
+                        <button type="submit" class="action-button">删除</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
